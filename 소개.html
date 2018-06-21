@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>소개</title>
+    <link rel=stylesheet href="background.css" type="text/css">
+        <style>
+        #main_header {
+            height: 60px;
+            line-height: 60px;
+            padding-right: 0px;
+            border-bottom: none;
+            color: white;
+        }
+        </style>
+        <!-- 네비게이션 -->
+        <style>
+            #main_gnb > ul { overflow: hidden; }
+            #main_gnb > ul > li { float: left; }
+            #main_gnb > ul > li > a {
+                text-decoration: none;
+                color : white;
+                display: white;
+                padding: 40px;
+                border: none;
+                font-weight: bold
+            }
+            #main_gnb > ul > li > a:hover {
+                background: none;
+                color: white;
+            }
+        </style>
+        <style>
+            #content {
+                /* 중앙 정렬 */
+                width: 1500px; margin: 150 auto;
+                /* 수평 레이아웃 구성 */
+                overflow: hidden;
+            }
+            #content > #main_section {
+                color : white;
+                width: 1300px;
+                float: left;
+            }
+            #content > #main_aside {
+                width: 200px;
+                float: right;
+            }
+        </style>
+        <!-- 본문 -->
+        <style>
+            #main_section > article.main_article {
+                color:white;
+                margin-bottom: 10px;
+                padding: 20px;
+                border: none;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                var tempColor;
+                $("a").hover(function (){
+                    tempColor = $(this).css("color");
+                    $(this).css("color","orangered");
+                },function(){
+                    $(this).css("color", tempColor);
+                    
+                })
+            });
+
+            
+        </script>
+        
+    </head>
+    <body>
+        <header id = "main_header" align = "MIDDLE">
+            <DIV id = "title" align = center><font size = '70' face="피아노 M"><DFN>Basket Ball Academy</DFN></font></DIV>
+            <nav id = "main_gnb">
+               <ul type = none >
+                   <li align = right><a href='main.html'><h3>홈</h3></a></li>
+                   <li align = right><a href='기초.html'><h3>기초</h3></a></li>
+                   <li align = right><a href='초급.html'><h3>초급</h3></a></li>
+                   <li align = right><a href='중급.html'><h3>중급</h3></a></li>
+                   <li align = right><a href='고급.html'><h3>고급</h3></a></li>
+                   <li align = right><a href='영상.html'><h3>영상</h3></a></li>
+                   <li align = right><a href='뉴스.html'><h3>뉴스</h3></a></li>
+                </ul>
+            </nav>   
+        </header>
+         <div align = "left" id="content">
+        <section id="main_section">
+            <article class= "main_article">
+                <h1>역사</h1>
+                <p>
+                19세기 후반 미국에서는 비가 내리거나 추운 겨울에도 할 수 있는 구기종목으로 고안된 것이  농구이다. 1891년 매사추세츠 주 스프링필드에 있는 국제 YMCA 체육학교(후에 스프링필드대학교) 캐나다 출신의 교사 제임스 네이스미스(James Naismith)가 창안하였다.
+
+                처음에는 두 팀의 경기자 수가 일정하지 않았으나 1895년에 1팀은 5명으로 구성하기로 하고 1897년에 명문화되었고, 1896년 최초의 공식 경기규칙위원회가 구성되었다. 또, 당초 코트의   형태도 불규칙하였으나 1903년 코트의 라인은 모두 직선이어야 된다고 결정하였다. 1905년 미국 서부 대학 바스켓볼협회가 생겼고, 1915년에는 YMCA·미국체육협회·미국대학연맹이 협동하여 농구의 정상적인 발전을 보게 되었다.
+                    
+                농구의 전파는 YMCA를 통해 캐나다·남아메리카·일본·필리핀·한국·중국 등 아시아 지역을 비롯하여 유럽에서도 독일·불가리아·폴란드·프랑스·이탈리아 등 여러 나라에 보급되었다. 농구의 인기와 붐이 급격하게 고조되기 시작한 것은 제2차 세계대전이 끝난 후부터이다.
+
+                농구 경기는 제11회 베를린 올림픽대회 때부터 올림픽 정식종목으로 채택되었다. 1952년의 제15회 헬싱키 올림픽대회까지는 미국의 규정에 따라 경기를 진행하였으나, 이후에는 국제아마추어농구연맹(Federation International Basketball Amateur:FIBA)의 규정에 따라 치러진다.
+                
+                세계대회 규모의 국제경기는 각국 대표들로 구성된 FIBA가 주관하고, 올림픽 및 세계선수권대회에는 유럽·아시아·아프리카·남북 아메리카주의 각 지역에서 예선을 거친 대표팀이 출전하여 대전한다.
+
+                한편, 프로농구는 1898년 미국 뉴저지 주 트렌튼 팀이 생겼으며, 같은 해에 이미 미국에서는 리그전을 벌일 만큼 몇몇 프로팀이 신설되었다. 이후 프로팀의 경기가 활성화되면서 프로농구는 전 세계에 알려지게 되었다
+                </p>
+            
+                <h1>경기 방법 및 규칙</h1>
+                <p>
+                규칙은 FIBA(국제농구연맹)에서 제정한 국제규칙이 일반적으로 적용된다. 국제규정과 아메리칸 규정에 차이가 있듯이, 프로경기와 아마추어경기에도 각각 약간의 차이점이 있다. 
+
+                각 팀은 5명의 선수로 구성되며, 그 중 주장은 시합 도중에 설명을 요구하든가 궁금한 사항이 있을 경우에는 심판에게 정중하게 질문할 수 있다. 선수의 교체 멤버는 각 팀에 7명까지 허용되며, 모든 선수는 유니폼의 앞과 뒷면에 4번부터 15번까지의 고유번호를 각각 사용하여야 한다.
+
+                심판은 주심·1부심·2부심으로 3명이 있고, 이밖에 경기기록원(기록원·보조기록원·경기시간 계시원·24초 계시원)과 감독관이 심판을 돕는다.
+
+                경기시간은 10분씩 4쿼터로 진행하며 NBA의 경우 12분씩 4쿼터로 진행한다.(아마추어나 대학생은 전·후반 각 20분씩이다.) 경기 진행 중에 코치는 작전타임을 요구할 수 있으며, 심판이 이것을 인정하면 전반전에 2회, 후반전에 3회, 각각 90초간의 차지드 타임아웃을 가질 수 있다. 게임은 센터서클에서 주심의 토스업으로 시작되며 1쿼터를 제외한 다른 모든 쿼터는 드로우인하는 선수에게 볼이 건네어지면 시작된다.  
+
+                후반전에는 양 팀이 바스켓을 바꾸어서 경기를 재개한다. 점수는 필드스로[野投]에 의한 득점이 2점(단, 3점라인 밖은 3점)이고 프리스로(自由投)에 의한 득점은 1점인데, 실수로 자기 팀의 바스켓에 볼을 넣어도 상대팀의 득점으로 계산한다. 전체 시합시간을 통해 많이 득점한 팀이 승리하지만, 양 팀이 동점일 경우에는 승부가 가려질 때까지 1회 5분 동안 연장쿼터를 속행한다.
+
+                반칙에는 크게 2가지로 나뉘는데, 신체의 부당한 접촉으로 일어나는 퍼스널 파울과 코치의 반칙을 포함한 선수의 직접적인 파울 이외의 반칙으로 테크니컬 파울이 있다. 개인반칙은 차징·트리핑·해킹·푸싱·블로킹·홀딩 등이 포함되고, 테크니컬 파울은 게임 진행을 지연시킨다든지 수속상의 잘못 등이 포함된다.
+
+                반칙을 5차례 범하면 그 선수는 퇴장당한다. 반칙이 발생하면 그 상황에 따라서 상대편 선수에게 보상이 주어진다. 즉 슛 동작 중에 상대편의 반칙으로 인하여 그것이 성공하지 못했을 때는 2개의 자유투(3점 슛 동작에서는 3개)가 주어지고, 슛이 성공하였을 때는 보너스로 1개의 자유투가 주어지며, 슛 동작 이외의 경우에는 사이드라인에서의 스로인이 된다.
+
+                파울 이외에도 볼을 취급하는 중에 위반하는 것을 바이얼레이션이라고 하며, 이럴 경우 볼이 상대팀으로 넘어가 사이드라인에서 스로인이 된다. 
+
+                그리고 한 팀이 한 쿼터에 4개의 팀파울을 범하면 5개째부터는 팀파울 페널티가 적용되어, 이후의 개인반칙에 대해서는 프리스로 2개가 주어진다.
+                
+                공격은 크게 나누어 지공법(遲攻法)과 속공법(速攻法)으로 나뉘는데, 지공법은 볼의 컨트롤에 중점을 둠으로써 슛이 확실하게 성공할 때까지 패스나 드리블로 공격을 천천히 전개하는 것이고, 속공법은 빠른 경기 운영에 주안점을 두고 공격하는 것이다.
+
+                방어전술로는 상대편 선수를 1 대 1로 맡아서 지키는 대인방어와 어떤 특정지역을 선수 각자가 맡아서 지키는 지역방어 전법이 대표적이다. 또한 대인방어를 변화시킨 시프트디펜스 전법 외에, 올코트디펜스라든지 프레스디펜스 등이 있으며, 이러한 전법들을 여러 가지로 변형시켜서 개발한 방어법이 많이 등장한다.
+                </p>
+
+            </article>
+        </section>
+        </div>
+    </body>
+        
+</html>

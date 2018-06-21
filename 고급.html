@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title> 고급 </title>
+        <link rel=stylesheet href="background.css" type="text/css">
+        <style>
+        #main_header {
+            height: 60px;
+            line-height: 60px;
+            padding-right: 0px;
+            border-bottom: none;
+            color: white;
+        }
+        </style>
+        <!-- 네비게이션 -->
+        <style>
+            #main_gnb > ul { overflow: hidden; }
+            #main_gnb > ul > li { float: left; }
+            #main_gnb > ul > li > a {
+                text-decoration: none;
+                color : white;
+                display: white;
+                padding: 40px;
+                border: none;
+                font-weight: bold
+            }
+            #main_gnb > ul > li > a:hover {
+                background: none;
+                color: white;
+            }
+        </style>
+        <style>
+            #content {
+                /* 중앙 정렬 */
+                width: 1500px; margin: 150 auto;
+                /* 수평 레이아웃 구성 */
+                overflow: hidden;
+            }
+            #content > #main_section {
+                color : white;
+                width: 750px;
+                float: left;
+            }
+            #content > #main_aside {
+                width: 200px;
+                float: right;
+            }
+        </style>
+        <!-- 본문 -->
+        <style>
+            #main_section > article.main_article {
+                color:white;
+                margin-bottom: 10px;
+                padding: 20px;
+                border: none;
+            }
+        </style>
+               <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                var tempColor;
+                $("a").hover(function (){
+                    tempColor = $(this).css("color");
+                    $(this).css("color","orangered");
+                },function(){
+                    $(this).css("color", tempColor);
+                    
+                })
+            });
+
+            
+        </script>
+    </head>
+    <body>
+        <header id = "main_header" align = "MIDDLE">
+            <DIV id = "title" align = center><font size = '70' face="피아노 M"><DFN>Basket Ball Academy</DFN></font></DIV>
+            <nav id = "main_gnb">
+               <ul type = none >
+                   <li align = right><a href='main.html'><h3>홈</h3></a></li>
+                   <li align = right><a href='소개.html'><h3>소개</h3></a></li>
+                   <li align = right><a href='기초.html'><h3>기초</h3></a></li>
+                   <li align = right><a href='초급.html'><h3>초급</h3></a></li>
+                   <li align = right><a href='중급.html'><h3>중급</h3></a></li>
+                   <li align = right><a href='영상.html'><h3>영상</h3></a></li>
+                   <li align = right><a href='뉴스.html'><h3>뉴스</h3></a></li>
+                </ul>
+            </nav>   
+        </header>
+         <div align = "left" id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>고급 기술</h1>
+                <table>
+                    <tr>
+                        <td>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IBQ77dkcipQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/tRpqMIp0vqQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/f0eesXF2Wao" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/k-NhJrMPnjU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        </div>
+    </body>
+</html>
